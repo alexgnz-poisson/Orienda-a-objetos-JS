@@ -1,0 +1,4 @@
+Conociendo que las clases es otro recurso más disponible en Javascript. ¿Cuando debemos crear una clase?
+
+Las clases definen una forma de organizar datos repetibles y, por eso, debemos usarlas para evitar tener que repetir 
+líneas de código que hacen referencia a la misma información.
