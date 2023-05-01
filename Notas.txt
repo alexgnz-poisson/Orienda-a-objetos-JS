@@ -29,3 +29,35 @@ equipo.
 Un método define el comportamiento o la forma de realizar algo.
 Ese es el objetivo de los métodos, definir qué acciones puede ejecutar un objeto. El comportamiento es implementado 
 dentro del método.
+
+Las clases tienen una operacion llamada constructor que se ejecuta al momento de crear la instancia. 
+
+
+#Encapsulamiento.
+En la clase Creamos métodos para proteger atributos e informaciones sensibles de nuestras clases. Sin embargo, si no 
+hacemos nada, esta información aún queda expuesta y se puede cambiar manualmente.
+
+Relacionado a la protección de atributos:
+
+Por defecto en Javascript usamos el prefijo “_” para indicar que es un atributo privado y que no debe ser alterado 
+manualmente.
+A pesar de que no existe una limitación de sintaxis para cambiar la propiedad, si se realizan alteraciones manuales sobre 
+atributos con ese prefijo se considera una mala práctica pues se estaría rompiendo el encapsulamiento de la clase.
+
+Actualmente en Javascript ningún atributo o método es realmente privado.
+ Javascript es un lenguaje de alcance abierto y por eso es posible visualizar cualquier atributo o propiedad de nuestra 
+ clase.
+
+Variables privadas dentro del codigo no se veran reflejadas al imprimirse y eso es claro ya que son privada.
+
+
+Organizando el codigo.
+Organizar un proyecto de manera correcta es de gran importancia, pues nos permite crecer de manera sostenida las 
+funcionalidades, además de permitirnos encontrar las funcionalidades dentro del código de manera rápida.
+
+Creamos módulos para compartir y reutilizar código entre los distintos archivos del proyecto, lo cual ayuda mucho en 
+la organización del mismo.
+En Javascript cada archivo es considerado un módulo y podemos escoger que exportar y que no exportar de él.
+
+Para exportar e importar es necesario usar en la terminal el comando npm install y de ahi ir llenando a segun nuestras
+necesidades lo que nos vaya pidiendo con esto obtendremos nuestro package.json
