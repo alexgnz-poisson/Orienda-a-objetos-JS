@@ -1,11 +1,23 @@
 export class CuentaCorriente{
+    #cliente;
     numero;
-    #saldo;
     agencia;
+    #saldo;
+
+    set cliente(valor){
+        this.#cliente = valor;
+    }
+
+    get cliente(){
+        return this.#cliente;
+    }
+
     constructor(){
-        this.#saldo = 0;
+
+        this.#cliente = null;
         this.numero = '';
         this.agencia = '';
+        this.#saldo = 0;
 
     }
     //Al estar en el molde,deberiamos intentar acceder a la cuenta corriente actual que estamos manejando
@@ -27,4 +39,10 @@ export class CuentaCorriente{
     verSaldo(){
         return this.#saldo;
     }
+
+    transferirParaCuenta(valor,cuentaDestino){
+        this.retirarDeCuenta(valor);
+        cuentaDestino.depositoEnCuenta(valor);
+    }
 }
+

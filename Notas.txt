@@ -61,3 +61,23 @@ En Javascript cada archivo es considerado un módulo y podemos escoger que expor
 
 Para exportar e importar es necesario usar en la terminal el comando npm install y de ahi ir llenando a segun nuestras
 necesidades lo que nos vaya pidiendo con esto obtendremos nuestro package.json
+
+Null significa que no existe pero esta explicito 
+
+
+Encapsulando con getters y setters 
+
+Utilizando el asistente set podemos cambiar la regla de cómo un atributo puede o no puede modificarse sin tener que cambiarlo en diferentes 
+puntos del código.
+Esa es la idea, así que si cambia alguna regla de asignación, sólo necesitamos modificar un lugar. Recordando que de esta forma conseguimos 
+realizar protecciones a los atributos de forma fácil.
+
+El uso del asistente set es una buena práctica para garantizar que la asignación de valores a los atributos sea siempre segura.
+Es lo que conversábamos sobre la protección de los atributos de nuestras clases de encapsulación. Siempre debemos mantener tanta encapsulación 
+como sea posible.
+
+
+Utilizando Constructores 
+Los constructores son utilizados para inicializar los atributos.
+La inicialización de los atributos es la principal responsabilidad de los constructores, pero recordando que puedes ejecutar otras operaciones 
+de igual forma.
